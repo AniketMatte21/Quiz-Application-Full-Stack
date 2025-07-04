@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz-Page</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-wrapper">
+
+        <h2 class="quiz-heading">🧠 QUIZ</h2>
+        <form action="http://localhost:8080/validateAns/getScore" method="post">
+            <div class="timer">Time Left: <span id="timer"></span></div>
+        <button class="submit-btn" type="submit">submit</button>
+        </form>
+
+        <p class="score display"></p>
+        <button class="display wrongQueBtn">check wrong questions</button>
+    </div>
+
+    <h2 class="wrong-ans-heading display">Wrong Answers Review</h2>
+    <div class="scroll-wrapper"></div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="quiz.js"></script>
+</html>

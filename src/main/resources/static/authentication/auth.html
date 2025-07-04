@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+<div class="overlay" id="overlay" style="display: none">
+    <span class="loader"></span>
+</div>
+
+<div class="main">
+
+
+    <div class="signup-main">
+
+        <div class="signup-title">
+
+            <h2 class="alter-title">Create your Account</h2>
+
+
+        </div>
+        <form class="signup-form" method="POST" action="http://localhost:8080/doLogin" autocomplete="off">
+
+            <input  class="username" name="username"  type="text" placeholder="Enter your name">
+
+            <input class="none email" type="email" placeholder="Enter your email">
+
+            <input class="password" name="password" type="password" placeholder="Enter your password">
+
+            <input class="none conf-pass"  type="password" placeholder="Confirm your password">
+
+            <button class="createAcc-btn">Create account</button>
+            <button class="LoginAcc-btn display">Login here</button>
+        </form>
+
+        <div class="otp display">
+            Enter OTP
+            <input class="otp-field" type="number" placeholder="enter otp..">
+            <button class="verify-otp">verify</button>
+        </div>
+
+        <div class="buttons">
+            <p class="btn sign-up-btn" >sign up<p>
+            <p class="btn login-btn btn-style1" id="login-btn">login</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="auth.js"></script>
+</body>
+
+</html>
